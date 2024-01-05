@@ -16,7 +16,7 @@ func InsertUser(user do.User) error {
 
 func GetUserByUsername(userName string) *do.User {
 	var user *do.User
-	tx := core.DB.Model(&do.User{}).Where("username=?", userName).First(&user)
+	tx := core.DB.Model(&do.User{}).Where("username=?", userName).Find(&user)
 	if tx.Error != nil {
 		core.LOG.Println("Query user by username fail")
 	}

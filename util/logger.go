@@ -7,6 +7,7 @@ import (
 	retalog "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
+	"io"
 	"log"
 	"math"
 	"os"
@@ -56,13 +57,18 @@ func LoggerNorm() *logrus.Logger {
 	//创建日志
 	Log = logrus.New()
 
-	Log.SetFormatter(&logrus.TextFormatter{})
+	Log.SetFormatter(&logrus.TextFormatter{
+		TimestampFormat: "2006-01-02 15:04:05",
+	})
 
 	core.LOG = Log
 
 	//输出
 	//Log.Out = src
-	Log.SetOutput(src)
+	//Log.SetOutput(src)
+	// 同时输出日志到终端和文件中
+	multiWriter := io.MultiWriter(os.Stdout, src)
+	Log.SetOutput(multiWriter)
 
 	//设置日志级别
 	Log.SetLevel(logrus.DebugLevel)

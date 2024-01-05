@@ -7,12 +7,12 @@ import (
 	"code-go/util"
 )
 
-//	@title			Swagger Example API
+//	@title			code-go api
 //	@version		1.0
-//	@description	This is a sample server celler server.
+//	@description	code-go项目swagger api介绍
 //	@termsOfService	http://swagger.io/terms/
 
-//	@contact.name	API Support
+//	@contact.name	猫哥说
 //	@contact.url	http://www.swagger.io/support
 //	@contact.email	support@swagger.io
 
