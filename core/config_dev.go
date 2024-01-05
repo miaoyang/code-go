@@ -36,6 +36,7 @@ type MysqlConfig struct {
 	Database string `yaml:"database"`
 	Host     string `yaml:"host"`
 	Port     string `yaml:"port"`
+	LogMode  bool   `yaml:"log-mode"`
 }
 
 type RedisConfig struct {

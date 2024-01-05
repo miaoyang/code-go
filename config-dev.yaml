@@ -19,6 +19,8 @@ database:
     host: localhost
     # 端口
     port: 3306
+    # 是否开启日志
+    log-mode: true
 
 redis:
   host: localhost

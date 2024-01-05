@@ -26,9 +26,15 @@ func InitMysql() (*gorm.DB, error) {
 		log.Println("open db_mysql error ", err)
 		return nil, err
 	}
+	DB = dbMysql
 
-	//迁移
-	dbMysql.AutoMigrate(&do.User{})
+	//迁移表
+	autoMigrateTable()
+
+	// 是否打开日志
+	if mysqlConfig.LogMode {
+		dbMysql.Debug()
+	}
 
 	db, _ := dbMysql.DB()
 	//设置连接池的最大闲置连接数
@@ -37,6 +43,13 @@ func InitMysql() (*gorm.DB, error) {
 	db.SetMaxOpenConns(100)
 	//设置连接的最大复用时间
 	db.SetConnMaxLifetime(10 * time.Second)
-	DB = dbMysql
 	return dbMysql, nil
+}
+
+// 自动迁移表
+func autoMigrateTable() {
+	err := DB.AutoMigrate(&do.User{})
+	if err != nil {
+		LOG.Error("迁移表结构失败：", err)
+	}
 }
