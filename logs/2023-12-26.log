@@ -1,0 +1,4 @@
+time="2023-12-26T17:11:03+08:00" level=warning DataSize=0 HostName=ym-mac.local Ip="::1" Method=GET Path=/ SpendTime="2 ms" status=404
+00
+time="2023-12-26 16:51:27" level=info DataSize=39 HostName=ym-mac.local Ip="::1" Method=GET Path=/getIp SpendTime="1 ms" status=200
+time="2023-12-26 17:11:03" level=warning DataSize=0 HostName=ym-mac.local Ip="::1" Method=GET Path=/ SpendTime="2 ms" status=404

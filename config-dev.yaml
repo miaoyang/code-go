@@ -1,0 +1,28 @@
+app:
+  name: code-go
+  version: v0.0.1
+  introduction: "code-go是一个学习go的项目~"
+server:
+  host: localhost
+  port: ":28080"
+  appMode: debug # debug  开发模式   release  生产模式
+
+database:
+  mysql:
+    # 用户名
+    username: root
+    # 密码
+    password: 123456
+    # 数据库名
+    database: code-go
+    # 主机地址
+    host: localhost
+    # 端口
+    port: 3306
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0 #数据库编号
+

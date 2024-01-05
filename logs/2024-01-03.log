@@ -1,0 +1,125 @@
+time="2024-01-03T11:29:19+08:00" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03T11:29:19+08:00" level=info msg="redis连接成功！"
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info DataSize=3728 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/index.html SpendTime="0 ms" status=200
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info DataSize=144966 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui.css SpendTime="0 ms" status=200
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info DataSize=312217 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-standalone-preset.js SpendTime="0 ms" status=200
+time="2024-01-03T11:29:24+08:00" level=info DataSize=1061579 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-bundle.js SpendTime="4 ms" status=200
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info DataSize=1075 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="0 ms" status=200
+time="2024-01-03T11:29:24+08:00" level=info msg="origin:  "
+time="2024-01-03T11:29:24+08:00" level=info DataSize=628 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/favicon-32x32.png SpendTime="0 ms" status=200
+ime="2024-01-03T11:25:51+08:00" level=info msg="origin:  "
+time="2024-01-03T11:25:51+08:00" level=info DataSize=834 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="4 ms" status=200
+angmiao/GolandProjects/code-go/middleware/logger.go:128" DataSize=0 HostName=ym-mac.local Ip=10.38.13.248 Method=POST Path="/druid/indexer/v1/sampler?for=connect" SpendTime="2 ms" status=404
+ msg="origin:  "
+time="2024-01-03 09:42:28" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.13.245 Method=GET Path=/public/plugins/grafana/../../../../../../../../../../../etc/passwd SpendTime="0 ms" status=404
+time="2024-01-03 09:42:53" level=info msg="origin:  "
+time="2024-01-03 09:42:53" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.17.173 Method=GET Path=/../../../../../../../../../../../../../windows/win.ini SpendTime="1 ms" status=404
+time="2024-01-03 09:43:08" level=info msg="origin:  "
+time="2024-01-03 09:43:08" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.13.245 Method=GET Path="/public/plugins/grafana/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fc:/windows/win.ini" SpendTime="0 ms" status=404
+time="2024-01-03 09:44:52" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 09:44:53" level=info msg="redis连接成功！"
+time="2024-01-03 09:44:58" level=info msg="origin:  "
+time="2024-01-03 09:44:58" level=info msg="Query user by username fail"
+time="2024-01-03 09:44:58" level=info msg="插入用户失败"
+time="2024-01-03 09:50:10" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 09:50:10" level=info msg="redis连接成功！"
+time="2024-01-03 09:50:14" level=info msg="origin:  "
+time="2024-01-03 09:50:14" level=info msg="输入的用户名和密码为空"
+time="2024-01-03 09:51:14" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 09:51:14" level=info msg="redis连接成功！"
+time="2024-01-03 09:51:17" level=info msg="origin:  "
+time="2024-01-03 09:51:17" level=info msg="输入的用户名和密码为空"
+time="2024-01-03 09:51:17" level=info DataSize=68 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="0 ms" status=200
+time="2024-01-03 09:58:09" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 09:58:09" level=info msg="redis连接成功！"
+time="2024-01-03 09:58:13" level=info msg="origin:  "
+time="2024-01-03 09:58:13" level=info msg="Query user by username fail"
+time="2024-01-03 09:58:13" level=info msg="插入用户失败"
+time="2024-01-03 09:58:13" level=info DataSize=53 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="131 ms" status=200
+time="2024-01-03 09:59:12" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 09:59:12" level=info msg="redis连接成功！"
+time="2024-01-03 09:59:20" level=info msg="origin:  "
+time="2024-01-03 09:59:20" level=info msg="Query user by username fail"
+time="2024-01-03 09:59:20" level=info msg="插入用户失败  Error 1364: Field 'uuid' doesn't have a default value"
+time="2024-01-03 09:59:20" level=info DataSize=53 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="121 ms" status=200
+time="2024-01-03 10:02:07" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local" func=code-go/core.InitMysql file="/Users/yangmiao/GolandProjects/code-go/core/db_mysql.go:23"
+time="2024-01-03 10:02:07" level=info msg="redis连接成功！" func=code-go/core.InitRedis file="/Users/yangmiao/GolandProjects/code-go/core/redis.go:31"
+time="2024-01-03 10:02:13" level=info msg="origin:  " func=code-go/middleware.Cors.func1 file="/Users/yangmiao/GolandProjects/code-go/middleware/cors.go:14"
+time="2024-01-03 10:02:13" level=info msg="Query user by username fail" func=code-go/app/admin/dao.GetUserByUsername file="/Users/yangmiao/GolandProjects/code-go/app/admin/dao/user_dao.go:21"
+time="2024-01-03 10:02:13" level=info msg="insert user in do fail" func=code-go/app/admin/dao.InsertUser file="/Users/yangmiao/GolandProjects/code-go/app/admin/dao/user_dao.go:11"
+time="2024-01-03 10:02:13" level=info msg="插入用户失败  Error 1364: Field 'uuid' doesn't have a default value" func=code-go/app/admin/api.Register file="/Users/yangmiao/GolandProjects/code-go/app/admin/api/user_controller.go:41"
+time="2024-01-03 10:02:13" level=info func=code-go/middleware.Logger.func1 file="/Users/yangmiao/GolandProjects/code-go/middleware/logger.go:130" DataSize=53 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="193 ms" status=200
+time="2024-01-03 10:03:50" level=info msg="origin:  " func=code-go/middleware.Cors.func1 file="/Users/yangmiao/GolandProjects/code-go/middleware/cors.go:14"
+time="2024-01-03 10:03:50" level=warning func=code-go/middleware.Logger.func1 file="/Users/yangmiao/GolandProjects/code-go/middleware/logger.go:128" DataSize=0 HostName=ym-mac.local Ip=10.38.13.248 Method=POST Path="/druid/indexer/v1/sampler?for=connect" SpendTime="2 ms" status=404
+time="2024-01-03 10:41:06" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 10:41:07" level=info msg="redis连接成功！"
+time="2024-01-03 10:43:43" level=info msg="origin:  "
+time="2024-01-03 10:43:43" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.17.205 Method=POST Path=/sys/ui/extend/varkind/custom.jsp SpendTime="2 ms" status=404
+time="2024-01-03 10:43:43" level=info msg="origin:  "
+time="2024-01-03 10:43:43" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.13.240 Method=POST Path=/api/user/reg SpendTime="1 ms" status=404
+time="2024-01-03 10:57:21" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 10:57:22" level=info msg="redis连接成功！"
+time="2024-01-03 10:57:34" level=info msg="origin:  "
+time="2024-01-03 10:57:34" level=info msg="Query user by username fail"
+time="2024-01-03 10:57:34" level=info DataSize=38 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="183 ms" status=200
+time="2024-01-03 10:58:05" level=info msg="origin:  "
+time="2024-01-03 10:58:05" level=info msg="用户: admin 已存在\n"
+time="2024-01-03 10:58:05" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=admin&password=123456" SpendTime="55 ms" status=200
+time="2024-01-03 11:00:49" level=info msg="origin:  "
+time="2024-01-03 11:00:49" level=info msg="Query user by username fail"
+time="2024-01-03 11:00:49" level=info msg="insert user in do fail"
+time="2024-01-03 11:00:49" level=info msg="插入用户失败  Error 1062: Duplicate entry '' for key 'users.mobile'"
+time="2024-01-03 11:00:49" level=info DataSize=53 HostName=ym-mac.local Ip=127.0.0.1 Method=POST Path="/api/user/register?username=ym&password=123456" SpendTime="135 ms" status=200
+time="2024-01-03 11:05:36" level=info msg="origin:  "
+time="2024-01-03 11:05:36" level=warning DataSize=0 HostName=ym-mac.local Ip=10.38.17.173 Method=GET Path="/solr/admin/cores?indexInfo=false&wt=json" SpendTime="4 ms" status=404
+time="2024-01-03 11:20:43" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 11:20:43" level=info msg="redis连接成功！"
+time="2024-01-03 11:21:05" level=info msg="origin:  "
+time="2024-01-03 11:21:05" level=info DataSize=3728 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/index.html SpendTime="1 ms" status=200
+time="2024-01-03 11:21:05" level=info msg="origin:  "
+time="2024-01-03 11:21:05" level=info msg="origin:  "
+time="2024-01-03 11:21:05" level=info DataSize=144966 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui.css SpendTime="1 ms" status=200
+time="2024-01-03 11:21:05" level=info msg="origin:  "
+time="2024-01-03 11:21:05" level=info DataSize=312217 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-standalone-preset.js SpendTime="0 ms" status=200
+time="2024-01-03 11:21:05" level=info DataSize=1061579 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-bundle.js SpendTime="4 ms" status=200
+time="2024-01-03 11:21:06" level=info msg="origin:  "
+time="2024-01-03 11:21:06" level=info DataSize=834 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="0 ms" status=200
+time="2024-01-03 11:21:06" level=info msg="origin:  "
+time="2024-01-03 11:21:06" level=info DataSize=628 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/favicon-32x32.png SpendTime="0 ms" status=200
+time="2024-01-03 11:21:57" level=info msg="origin:  "
+time="2024-01-03 11:21:57" level=info DataSize=834 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="0 ms" status=200
+time="2024-01-03 11:25:22" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 11:25:22" level=info msg="redis连接成功！"
+time="2024-01-03 11:25:33" level=info msg="origin:  "
+time="2024-01-03 11:25:33" level=info DataSize=3728 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/index.html SpendTime="0 ms" status=200
+time="2024-01-03 11:25:33" level=info msg="origin:  "
+time="2024-01-03 11:25:33" level=info DataSize=144966 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui.css SpendTime="0 ms" status=200
+time="2024-01-03 11:25:33" level=info msg="origin:  "
+time="2024-01-03 11:25:33" level=info DataSize=312217 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-standalone-preset.js SpendTime="0 ms" status=200
+time="2024-01-03 11:25:33" level=info msg="origin:  "
+time="2024-01-03 11:25:33" level=info DataSize=1061579 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-bundle.js SpendTime="5 ms" status=200
+time="2024-01-03 11:25:34" level=info msg="origin:  "
+time="2024-01-03 11:25:34" level=info DataSize=834 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="1 ms" status=200
+time="2024-01-03 11:25:34" level=info msg="origin:  "
+time="2024-01-03 11:25:34" level=info DataSize=628 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/favicon-32x32.png SpendTime="0 ms" status=200
+time="2024-01-03 11:25:51" level=info msg="origin:  "
+time="2024-01-03 11:25:51" level=info DataSize=834 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="4 ms" status=200
+time="2024-01-03 11:29:19" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2024-01-03 11:29:19" level=info msg="redis连接成功！"
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info DataSize=3728 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/index.html SpendTime="0 ms" status=200
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info DataSize=144966 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui.css SpendTime="0 ms" status=200
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info DataSize=312217 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-standalone-preset.js SpendTime="0 ms" status=200
+time="2024-01-03 11:29:24" level=info DataSize=1061579 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/swagger-ui-bundle.js SpendTime="4 ms" status=200
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info DataSize=1075 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/doc.json SpendTime="0 ms" status=200
+time="2024-01-03 11:29:24" level=info msg="origin:  "
+time="2024-01-03 11:29:24" level=info DataSize=628 HostName=ym-mac.local Ip="::1" Method=GET Path=/swagger/favicon-32x32.png SpendTime="0 ms" status=200

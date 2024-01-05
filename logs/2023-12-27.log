@@ -1,0 +1,72 @@
+time="2023-12-27T21:45:43+08:00" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27T21:45:43+08:00" level=info msg="redis连接成功！"
+time="2023-12-27T21:45:48+08:00" level=info msg="origin:  "
+time="2023-12-27T21:45:48+08:00" level=info msg="Query user by username fail"
+time="2023-12-27T21:45:49+08:00" level=info msg="insert user fail"
+time="2023-12-27T21:45:49+08:00" level=info DataSize=51 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="175 ms" status=200
+7T21:43:55+08:00" level=info msg="Query user by username fail"
+time="2023-12-27T21:43:55+08:00" level=info msg="用户: yangmiao 已存在\n"
+time="2023-12-27T21:43:55+08:00" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="31 ms" status=200
+time="2023-12-27T21:43:58+08:00" level=info msg="origin:  "
+time="2023-12-27T21:43:58+08:00" level=info msg="Query user by username fail"
+time="2023-12-27T21:43:58+08:00" level=info msg="用户: yangmiao 已存在\n"
+time="2023-12-27T21:43:58+08:00" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="4 ms" status=200
+l=info DataSize=66 HostName=ym-mac.local Ip="::1" Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="0 ms" status=200
+time="2023-12-27 20:50:00" level=info DataSize=66 HostName=ym-mac.local Ip="::1" Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="5 ms" status=200
+time="2023-12-27 20:51:48" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 20:51:48" level=info msg="redis连接成功！"
+time="2023-12-27 20:52:00" level=info msg="origin:  "
+time="2023-12-27 20:52:00" level=info DataSize=66 HostName=ym-mac.local Ip="::1" Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="1 ms" status=200
+time="2023-12-27 20:52:09" level=info msg="origin:  "
+time="2023-12-27 20:52:09" level=info DataSize=66 HostName=ym-mac.local Ip="::1" Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="0 ms" status=200
+time="2023-12-27 21:05:27" level=info msg="origin:  "
+time="2023-12-27 21:05:27" level=info DataSize=66 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="3 ms" status=200
+time="2023-12-27 21:05:55" level=info msg="origin:  "
+time="2023-12-27 21:05:55" level=info DataSize=66 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="0 ms" status=200
+time="2023-12-27 21:07:30" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:07:32" level=info msg="redis连接成功！"
+time="2023-12-27 21:07:36" level=info msg="origin:  "
+time="2023-12-27 21:10:59" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:11:08" level=info msg="redis连接成功！"
+time="2023-12-27 21:11:38" level=info msg="origin:  "
+time="2023-12-27 21:11:38" level=info msg="insert user fail"
+time="2023-12-27 21:11:38" level=info DataSize=51 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="312 ms" status=200
+time="2023-12-27 21:19:29" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:19:29" level=info msg="redis连接成功！"
+time="2023-12-27 21:19:37" level=info msg="origin:  "
+time="2023-12-27 21:19:37" level=info msg="insert user fail"
+time="2023-12-27 21:19:37" level=info DataSize=51 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="337 ms" status=200
+time="2023-12-27 21:21:40" level=info msg="origin:  "
+time="2023-12-27 21:21:40" level=info msg="insert user fail"
+time="2023-12-27 21:21:40" level=info DataSize=51 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="219 ms" status=200
+time="2023-12-27 21:36:16" level=info msg="origin:  "
+time="2023-12-27 21:36:16" level=warning DataSize=0 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/getUserByName?username=root" SpendTime="3 ms" status=404
+time="2023-12-27 21:36:29" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:36:29" level=info msg="redis连接成功！"
+time="2023-12-27 21:36:37" level=info msg="origin:  "
+time="2023-12-27 21:37:18" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:37:18" level=info msg="redis连接成功！"
+time="2023-12-27 21:37:25" level=info msg="origin:  "
+time="2023-12-27 21:39:32" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:39:32" level=info msg="redis连接成功！"
+time="2023-12-27 21:39:39" level=info msg="origin:  "
+time="2023-12-27 21:39:39" level=info DataSize=284 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/getUserByName?username=root" SpendTime="101 ms" status=200
+time="2023-12-27 21:43:04" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:43:04" level=info msg="redis连接成功！"
+time="2023-12-27 21:43:35" level=info msg="origin:  "
+time="2023-12-27 21:43:35" level=info msg="用户: root 已存在\n"
+time="2023-12-27 21:43:35" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=root&password=123456" SpendTime="72 ms" status=200
+time="2023-12-27 21:43:55" level=info msg="origin:  "
+time="2023-12-27 21:43:55" level=info msg="Query user by username fail"
+time="2023-12-27 21:43:55" level=info msg="用户: yangmiao 已存在\n"
+time="2023-12-27 21:43:55" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="31 ms" status=200
+time="2023-12-27 21:43:58" level=info msg="origin:  "
+time="2023-12-27 21:43:58" level=info msg="Query user by username fail"
+time="2023-12-27 21:43:58" level=info msg="用户: yangmiao 已存在\n"
+time="2023-12-27 21:43:58" level=info DataSize=62 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="4 ms" status=200
+time="2023-12-27 21:45:43" level=info msg="dsn:  root:123456@tcp(localhost:3306)/code-go?charset=utf8mb4&parseTime=True&loc=Local"
+time="2023-12-27 21:45:43" level=info msg="redis连接成功！"
+time="2023-12-27 21:45:48" level=info msg="origin:  "
+time="2023-12-27 21:45:48" level=info msg="Query user by username fail"
+time="2023-12-27 21:45:49" level=info msg="insert user fail"
+time="2023-12-27 21:45:49" level=info DataSize=51 HostName=ym-mac.local Ip=127.0.0.1 Method=GET Path="/api/user/insertUser?username=yangmiao&password=123456" SpendTime="175 ms" status=200
