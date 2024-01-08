@@ -11,6 +11,10 @@ latest_log.log
 # Test binary, built with `go test -c`
 *.test
 
+code-go
+
+nohup.out
+
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 

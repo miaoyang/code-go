@@ -4,7 +4,7 @@ app:
   introduction: "code-go是一个学习go的项目~"
 server:
   host: localhost
-  port: ":28080"
+  port: 8080
   appMode: debug # debug  开发模式   release  生产模式
 
 database:

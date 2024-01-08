@@ -1,7 +1,10 @@
 package util
 
 import (
+	"fmt"
 	"log"
+	"math/rand"
+	"net"
 	"net/http"
 	"regexp"
 	"strings"
@@ -65,4 +68,44 @@ func GetIpAddress(r *http.Request) string {
 		}
 	}
 	return ipAddress
+}
+
+// GetAvailablePort 查询可用端口
+func GetAvailablePort(minPort, maxPort, defaultPort int) int {
+	if isPortAvailable(defaultPort) {
+		return defaultPort
+	}
+	if minPort >= maxPort {
+		log.Printf("minPort>=maxPort, %d, %d\n", minPort, maxPort)
+		return -1
+	}
+
+	portRange := maxPort - minPort
+	var searchCount = 0
+	for searchCount <= portRange {
+		nextPort := findRandomPort(minPort, maxPort)
+		if isPortAvailable(nextPort) {
+			return nextPort
+		}
+	}
+	return -1
+}
+
+// isPortAvailable 端口是否可用
+func isPortAvailable(port int) bool {
+	listener, err := net.Listen("tcp", fmt.Sprintf(":%d", port))
+	if err != nil {
+		log.Printf("port: %d is not available\n", port)
+		return false
+	}
+	defer listener.Close()
+	return true
+}
+
+// 查询下一个可用的端口 findRandomPort
+func findRandomPort(minPort, maxPort int) int {
+	portRange := maxPort - minPort
+	// intn [0,range)
+	nextPort := minPort + rand.Intn(portRange+1)
+	return nextPort
 }

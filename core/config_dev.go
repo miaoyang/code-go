@@ -22,8 +22,9 @@ type App struct {
 }
 
 type ServerConfig struct {
-	Host string `yaml:"host"`
-	Port string `yaml:"port"`
+	Host    string `yaml:"host"`
+	Port    int    `yaml:"port"`
+	AppMode string `yaml:"appMode"`
 }
 
 type DatabaseConfig struct {
@@ -68,7 +69,8 @@ func PrintConfig() {
 	fmt.Println("*                        ")
 	fmt.Println("*   Welcome to code-go   ")
 	fmt.Printf("*   Introduction: %s\n", Config.App.Introduction)
-	fmt.Printf("*   Click url：http://localhost%s\n", Config.Server.Port)
+	fmt.Printf("*   Environment: %s\n", Config.Server.AppMode)
+	fmt.Printf("*   Click url：http://localhost:%d\n", Config.Server.Port)
 	fmt.Println("*                        ")
 	fmt.Println("**************************************************")
 }

@@ -5,6 +5,7 @@ import (
 	"code-go/docs"
 	"code-go/middleware"
 	"code-go/util"
+	"strconv"
 )
 
 //	@title			code-go api
@@ -47,7 +48,11 @@ func main() {
 
 	// 路由
 	router := middleware.InitRouter()
-	router.Run(core.Config.Server.Port)
+
+	// 启动
+	port := util.GetAvailablePort(8000, 10000, core.Config.Server.Port)
+	core.LOG.Printf("启动的服务：http://localhost:%d", port)
+	router.Run(string(":" + strconv.Itoa(port)))
 
 	core.LOG.Println(docs.SwaggerInfo)
 
