@@ -71,6 +71,7 @@ func PrintConfig() {
 	fmt.Printf("*   Introduction: %s\n", Config.App.Introduction)
 	fmt.Printf("*   Environment: %s\n", Config.Server.AppMode)
 	fmt.Printf("*   Click url：http://localhost:%d\n", Config.Server.Port)
+	fmt.Printf("*   Swagger url: http://localhost:%d/swagger/index.html\n", Config.Server.Port)
 	fmt.Println("*                        ")
 	fmt.Println("**************************************************")
 }

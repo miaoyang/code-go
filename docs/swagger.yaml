@@ -2,22 +2,85 @@ basePath: /
 externalDocs:
   description: OpenAPI
   url: https://swagger.io/resources/open-api/
-host: localhost:28080
+host: localhost:8080
 info:
   contact:
     email: support@swagger.io
-    name: API Support
+    name: 猫哥说
     url: http://www.swagger.io/support
-  description: This is a sample server celler server.
+  description: code-go项目swagger api介绍
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   termsOfService: http://swagger.io/terms/
-  title: Swagger Example API
+  title: code-go api
   version: "1.0"
 paths:
+  /api/user/getAllUser:
+    get:
+      parameters:
+      - description: 页数
+        in: query
+        name: pagenum
+        required: true
+        type: integer
+      - description: 页面大小
+        in: query
+        name: pagesize
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      summary: 查询所有的用户
+  /api/user/getUserByName:
+    get:
+      parameters:
+      - description: 用户名
+        in: query
+        maxLength: 20
+        name: username
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 用户登录
+  /api/user/login:
+    post:
+      parameters:
+      - description: 用户名
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: 密码
+        in: query
+        name: password
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 用户登录
   /api/user/register:
     post:
+      parameters:
+      - description: 用户名
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: 密码
+        in: query
+        name: password
+        required: true
+        type: string
+      - description: 电话
+        in: query
+        name: mobile
+        required: true
+        type: string
       produces:
       - application/json
       responses: {}

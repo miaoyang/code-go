@@ -23,18 +23,19 @@ func GetUserByUsername(userName string) *do.User {
 	return user
 }
 
-func GetUser(pageNum, pageSize int) ([]do.User, int64) {
-	var users []do.User
+func GetUser(pageNum, pageSize int) ([]*do.User, int64) {
+	var users []*do.User
 	var total int64
 	DB := core.DB.Model(&do.User{})
 	err := DB.Limit(pageSize).Offset((pageNum - 1) * pageSize).Find(&users).Error
+	core.LOG.Println("查询到的所有账号：", len(users))
 	if err != nil {
-		core.LOG.Println("GetUser fail")
+		core.LOG.Println("GetUser fail", err)
 		return nil, 0
 	}
 	err = DB.Count(&total).Error
 	if err != nil {
-		core.LOG.Println("GetUser count fail")
+		core.LOG.Println("GetUser count fail", err)
 		return nil, 0
 	}
 	return users, total

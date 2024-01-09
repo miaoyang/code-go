@@ -1,6 +1,8 @@
 package util
 
+import "C"
 import (
+	"code-go/core"
 	"fmt"
 	"log"
 	"math/rand"
@@ -32,7 +34,7 @@ func GetIp(r *http.Request) string {
 
 	log.Println("get ip: ", ip)
 	if !ValidateIP(ip) {
-		log.Println("validate ip fail")
+		core.LOG.Println("validate ip fail")
 		return ""
 	}
 	return ip
@@ -55,7 +57,7 @@ func GetIpAddress(r *http.Request) string {
 	var ipAddress string
 
 	ipAddress = r.RemoteAddr
-	log.Println("ipAddress: ", ipAddress)
+	core.LOG.Println("ipAddress: ", ipAddress)
 	if ipAddress != "" {
 		ipAddress = strings.Split(ipAddress, ":")[0]
 	}
@@ -76,7 +78,7 @@ func GetAvailablePort(minPort, maxPort, defaultPort int) int {
 		return defaultPort
 	}
 	if minPort >= maxPort {
-		log.Printf("minPort>=maxPort, %d, %d\n", minPort, maxPort)
+		core.LOG.Printf("minPort>=maxPort, %d, %d\n", minPort, maxPort)
 		return -1
 	}
 
@@ -95,7 +97,7 @@ func GetAvailablePort(minPort, maxPort, defaultPort int) int {
 func isPortAvailable(port int) bool {
 	listener, err := net.Listen("tcp", fmt.Sprintf(":%d", port))
 	if err != nil {
-		log.Printf("port: %d is not available\n", port)
+		core.LOG.Printf("port: %d is not available\n", port)
 		return false
 	}
 	defer listener.Close()

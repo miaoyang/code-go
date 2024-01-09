@@ -19,7 +19,7 @@ func InitRouter() *gin.Engine {
 	// 需授权
 	auth := g.Group("/api")
 	{
-		auth.GET("/user/getAllUserInfo", api.GetAllUser)
+		auth.GET("/user/getAllUser", api.GetAllUser)
 		auth.POST("/user/register", api.Register)
 		auth.POST("/user/login", api.Login)
 		auth.GET("/user/getUserByName", api.GetUserByUsername)

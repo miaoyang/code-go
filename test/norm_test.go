@@ -98,3 +98,16 @@ func TestTeacherInterface(t *testing.T) {
 	teacher := NewTeacher("三年级", "三年级一班")
 	GetNameTest(teacher)
 }
+
+func TestFor(t *testing.T) {
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	collection := make([]int, 2)
+	collection[0] = 1
+	collection[1] = 2
+	for index, value := range collection {
+		fmt.Println(index, value)
+	}
+}

@@ -6,8 +6,8 @@ import (
 
 type User struct {
 	gorm.Model
-	Username     string  `gorm:"type:varchar(20);not null;unique" json:"username"`
-	Password     string  `gorm:"size:255;not null" json:"password"`
+	Username     string  `gorm:"type:varchar(20);not null;unique;index:idx_username" json:"username"`
+	Password     string  `gorm:"size:255;not null" json:"password,omitempty"`
 	Mobile       string  `gorm:"type:varchar(11);not null;unique" json:"mobile"`
 	Avatar       string  `gorm:"type:varchar(255)" json:"avatar"`
 	Nickname     *string `gorm:"type:varchar(20)" json:"nickname"`
