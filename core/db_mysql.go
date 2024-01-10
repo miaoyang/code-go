@@ -48,7 +48,7 @@ func InitMysql() (*gorm.DB, error) {
 
 // 自动迁移表
 func autoMigrateTable() {
-	err := DB.AutoMigrate(&do.User{})
+	err := DB.AutoMigrate(&do.User{}, &do.OperationLog{})
 	if err != nil {
 		LOG.Error("迁移表结构失败：", err)
 	}

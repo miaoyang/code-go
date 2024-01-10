@@ -99,7 +99,6 @@ func Login(c *gin.Context) {
 
 	// 数据库查询
 	user := dao.GetUserByUsername(userName)
-	core.LOG.Println("查询到的用户：", user)
 	if user.Username == "" {
 		core.LOG.Println("用户登录：未查询到用户")
 		c.JSON(http.StatusOK, common.FailWithCodeMsg(common.USER_NOT_EXIST, common.GetMapInfo(common.USER_NOT_EXIST)))
@@ -131,6 +130,7 @@ func Login(c *gin.Context) {
 		return
 	}
 	userVo := vo.ConvertToUserResVo(user)
+	c.Header(global.Authorization, token)
 	c.JSON(http.StatusOK, gin.H{
 		"token": token,
 		"user":  userVo,

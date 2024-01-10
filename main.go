@@ -49,6 +49,11 @@ func main() {
 	// 路由
 	router := middleware.InitRouter()
 
+	// 保存日志到DB，开启多个协程可能存在先后问题TODO:
+	for i := 0; i < 1; i++ {
+		go middleware.SaveOperationLog()
+	}
+
 	// 启动
 	port := util.GetAvailablePort(8000, 10000, core.Config.Server.Port)
 	core.LOG.Printf("启动的服务：http://localhost:%d", port)

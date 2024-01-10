@@ -3,13 +3,11 @@ package util
 import (
 	"code-go/core"
 	"fmt"
-	"github.com/gin-gonic/gin"
 	retalog "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
 	"io"
 	"log"
-	"math"
 	"os"
 	"path"
 	"time"
@@ -100,46 +98,46 @@ func LoggerNorm() *logrus.Logger {
 	return Log
 }
 
-// Logger 日志，此操作可以复用
-func Logger() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		startTime := time.Now()
-		c.Next()
-		stopTime := time.Since(startTime)
-		spendTime := fmt.Sprintf("%d ms", int(math.Ceil(float64(stopTime.Nanoseconds()/1000000.0))))
-		hostName, err := os.Hostname()
-		if err != nil {
-			hostName = "unknown"
-		}
-		statusCode := c.Writer.Status()
-		clientIp := c.ClientIP()
-		//userAgent := c.Request.UserAgent()
-		dataSize := c.Writer.Size()
-		if dataSize < 0 {
-			dataSize = 0
-		}
-		method := c.Request.Method
-		requestPath := c.Request.RequestURI
-
-		entry := Log.WithFields(logrus.Fields{
-			"HostName":  hostName,
-			"status":    statusCode,
-			"SpendTime": spendTime,
-			"Ip":        clientIp,
-			"Method":    method,
-			"Path":      requestPath,
-			"DataSize":  dataSize,
-			//"Agent":     userAgent, // TODO: UA
-		})
-		if len(c.Errors) > 0 {
-			entry.Error(c.Errors.ByType(gin.ErrorTypePrivate).String())
-		}
-		if statusCode >= 500 {
-			entry.Error()
-		} else if statusCode >= 400 {
-			entry.Warn()
-		} else {
-			entry.Info()
-		}
-	}
-}
+//// Logger 日志，此操作可以复用
+//func Logger() gin.HandlerFunc {
+//	return func(c *gin.Context) {
+//		startTime := time.Now()
+//		c.Next()
+//		stopTime := time.Since(startTime)
+//		spendTime := fmt.Sprintf("%d ms", int(math.Ceil(float64(stopTime.Nanoseconds()/1000000.0))))
+//		hostName, err := os.Hostname()
+//		if err != nil {
+//			hostName = "unknown"
+//		}
+//		statusCode := c.Writer.Status()
+//		clientIp := c.ClientIP()
+//		//userAgent := c.Request.UserAgent()
+//		dataSize := c.Writer.Size()
+//		if dataSize < 0 {
+//			dataSize = 0
+//		}
+//		method := c.Request.Method
+//		requestPath := c.Request.RequestURI
+//
+//		entry := Log.WithFields(logrus.Fields{
+//			"HostName":  hostName,
+//			"status":    statusCode,
+//			"SpendTime": spendTime,
+//			"Ip":        clientIp,
+//			"Method":    method,
+//			"Path":      requestPath,
+//			"DataSize":  dataSize,
+//			//"Agent":     userAgent, // TODO: UA
+//		})
+//		if len(c.Errors) > 0 {
+//			entry.Error(c.Errors.ByType(gin.ErrorTypePrivate).String())
+//		}
+//		if statusCode >= 500 {
+//			entry.Error()
+//		} else if statusCode >= 400 {
+//			entry.Warn()
+//		} else {
+//			entry.Info()
+//		}
+//	}
+//}

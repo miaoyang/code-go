@@ -3,7 +3,6 @@ package middleware
 import (
 	"code-go/app/admin/api"
 	_ "code-go/docs"
-	"code-go/util"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"     // swagger embed files
 	ginSwagger "github.com/swaggo/gin-swagger" // gin-swagger middleware
@@ -13,7 +12,7 @@ import (
 func InitRouter() *gin.Engine {
 	g := gin.New()
 	g.Use(gin.Recovery())
-	g.Use(util.Logger())
+	g.Use(Logger())
 	g.Use(Cors())
 
 	// 需授权
@@ -30,6 +29,12 @@ func InitRouter() *gin.Engine {
 	{
 		norm.GET("/getIp", api.GetIp)
 		norm.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	}
+
+	// 测试
+	test := g.Group("/test")
+	{
+		test.GET("/ws", api.WsHandleTest)
 	}
 
 	return g
