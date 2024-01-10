@@ -49,10 +49,15 @@ func main() {
 	// 路由
 	router := middleware.InitRouter()
 
+	// 定时任务
+	cron := core.InitCron()
+	cron.Start()
+
 	// 保存日志到DB，开启多个协程可能存在先后问题TODO:
 	for i := 0; i < 1; i++ {
 		go middleware.SaveOperationLog()
 	}
+	//cron.AddJob("cron operation log", "0 0/1 * * * ? ", middleware.SaveOperationLogCron)
 
 	// 启动
 	port := util.GetAvailablePort(8000, 10000, core.Config.Server.Port)

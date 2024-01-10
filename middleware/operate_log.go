@@ -18,15 +18,27 @@ func SaveOperationLog() {
 	for val := range OperationLogChan {
 		Logs = append(Logs, *val)
 		core.LOG.Println("通道：", len(Logs), Logs)
-		if len(Logs) >= 5 {
+		if len(Logs) >= 3 {
 			err := core.DB.Create(&Logs).Error
 			if err != nil {
 				core.LOG.Println("保存日志失败：", err)
 			}
+			core.LOG.Debug("协程保存日志")
 			Logs = make([]do.OperationLog, 0)
 		}
 	}
 }
+
+//func SaveOperationLogCron() {
+//	for val := range OperationLogChan {
+//		err := core.DB.Create(val).Error
+//		if err != nil {
+//			core.LOG.Println("保存日志失败：", err)
+//		}
+//		core.LOG.Debug("cron保存日志")
+//
+//	}
+//}
 
 // Logger 日志，此操作可以复用
 func Logger() gin.HandlerFunc {
