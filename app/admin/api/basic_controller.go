@@ -8,12 +8,19 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
+	"time"
 )
 
 // GetIp 获取请求ip
 func GetIp(c *gin.Context) {
 	address := util.GetIpAddress(c.Request)
 	c.JSON(http.StatusOK, common.OkWithData(address))
+}
+
+func GetCode(c *gin.Context) {
+	code := util.RandomCodeNumLetter(4)
+	core.Redis.SetEX(global.UserCode, code, 10*time.Minute)
+	c.JSON(http.StatusOK, common.OkWithData(code))
 }
 
 func CheckCode(c *gin.Context) {

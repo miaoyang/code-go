@@ -10,20 +10,20 @@ import (
 )
 
 // OperationLogChan 创建缓存日志channel
-var OperationLogChan = make(chan *do.OperationLog, 30)
+var OperationLogChan = make(chan *do.OperationLog, core.Config.Log.ChanSize)
 
 // SaveOperationLog 保存日志到DB
 func SaveOperationLog() {
 	Logs := make([]do.OperationLog, 0)
 	for val := range OperationLogChan {
 		Logs = append(Logs, *val)
-		core.LOG.Println("通道：", len(Logs), Logs)
-		if len(Logs) >= 3 {
+		//core.LOG.Println("通道：", len(Logs), Logs)
+		if len(Logs) >= core.Config.Log.SaveLogNum {
 			err := core.DB.Create(&Logs).Error
 			if err != nil {
 				core.LOG.Println("保存日志失败：", err)
 			}
-			core.LOG.Debug("协程保存日志")
+			//core.LOG.Debug("协程保存日志")
 			Logs = make([]do.OperationLog, 0)
 		}
 	}

@@ -28,3 +28,9 @@ redis:
   password: ""
   db: 0 #数据库编号
 
+log:
+  # 通道数据大小
+  chan-size: 30
+  # 每三条保存数据一次
+  save-log-num: 3
+

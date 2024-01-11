@@ -13,6 +13,7 @@ type YamlConfig struct {
 	Server   ServerConfig   `yaml:"server"`
 	Database DatabaseConfig `yaml:"database"`
 	Redis    RedisConfig    `yaml:"redis"`
+	Log      LogConfig      `yaml:"log"`
 }
 
 type App struct {
@@ -45,6 +46,11 @@ type RedisConfig struct {
 	Port     int    `yaml:"port"`
 	Password string `yaml:"password"`
 	Db       int    `yaml:"db"`
+}
+
+type LogConfig struct {
+	ChanSize   int `yaml:"chan-size"`
+	SaveLogNum int `yaml:"save-log-num"`
 }
 
 // InitConfigDev 初始化yaml config
