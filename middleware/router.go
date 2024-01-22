@@ -29,8 +29,9 @@ func InitRouter() *gin.Engine {
 	{
 		norm.GET("/getIp", api.GetIp)
 		norm.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
-		norm.GET("/getCode", api.GetCode)
-		norm.POST("/checkCode", api.CheckCode)
+
+		norm.GET("/captcha", api.GetCaptcha)
+		norm.POST("/checkCaptcha", api.CheckCaptcha)
 	}
 
 	// 测试
